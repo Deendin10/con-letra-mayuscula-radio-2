@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.clock {
+    font-size: 22px;
+    margin: 10px 0 20px 0;
+    color: #ff4081;
+}
+
+.play-btn {
+    background: #ff1744;
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding: 20px 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.play-btn:hover {
+    background: #ff4569;
+}
+
+#vumeter {
+    margin-top: 30px;
+    background: black;
+    border: 3px solid #ff4081;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+#podcast-list {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.podcast-card {
+    background: #222;
+    padding: 15px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    border-left: 5px solid #ff4081;
+    text-align: left;
+}
+
+.podcast-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+audio {
+    width: 100%;
+}
