@@ -16,12 +16,13 @@ const audio = document.getElementById("radio-stream");
 const playBtn = document.getElementById("play-btn");
 
 playBtn.addEventListener("click", () => {
-    audio.play();
+    audio.load();   // fuerza a preparar el stream
+    audio.play();   // intenta reproducir después de la carga
 });
 
 
 // =========================
-// VÚMETRO DISCOTECA (FUNCIONA SIEMPRE)
+// VÚMETRO DISCOTECA
 // =========================
 const canvas = document.getElementById("vumeter");
 const ctx = canvas.getContext("2d");
