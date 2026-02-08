@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CON LETRA MAYÚSCULA RADIO</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .player-container {
+            background: #222;
+            padding: 25px;
+            border-radius: 12px;
+            width: 320px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(255,255,255,0.1);
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+        }
+    </style>
 </head>
+
 <body>
 
     <h1>CON LETRA MAYÚSCULA RADIO</h1>
 
-    <div id="clock" class="clock"></div>
+    <div class="player-container">
+        <audio controls autoplay>
+            <source src="http://uk22freenew.listen2myradio.com:27734/;" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+        </audio>
+    </div>
 
-    <button id="play-btn" class="play-btn">▶</button>
-
-    <audio id="radio-stream" src="https://stream.zeno.fm/0f7f9yq9u0hvv"></audio>
-
-    <canvas id="vumeter" width="600" height="150"></canvas>
-
-    <h2>Podcasts</h2>
-    <div id="podcast-list"></div>
-
-    <script src="app.js"></script>
 </body>
 </html>
